@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agnum - Professional Home Renovations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#7EC8E3',  // Light blue
+                        secondary: '#808080', // Grey
+                        accent: '#5D8AA8',   // Air Force blue
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-poppins">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-hammer text-primary text-2xl"></i>
+                            <span class="text-secondary font-bold text-xl">Agnum Homes Pvt(Ltd)</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-secondary hover:text-primary">Home</a>
+                    <a href="#services" class="text-secondary hover:text-primary">Services</a>
+                    <a href="#portfolio" class="text-secondary hover:text-primary">Portfolio</a>
+                    <a href="#testimonials" class="text-secondary hover:text-primary">Testimonials</a>
+                    <a href="#contact" class="text-secondary hover:text-primary">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-secondary text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-image h-screen flex items-center justify-center text-center text-white">
+        <div class="px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Agnum Homes Pvt (Ltd)</h1>
+            <p class="text-xl md:text-2xl mb-8">Where getting things done is our expedition</p>
+            <a href="#contact" class="bg-primary hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+                Get a Free Quote
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-secondary mb-12">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-secondary">Full Home Renovation</h3>
+                    <p class="text-gray-600">Complete transformation of your living space from concept to completion.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-bath"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-secondary">Bathroom Remodeling</h3>
+                    <p class="text-gray-600">Create your dream bathroom with our expert design and installation.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-secondary">Kitchen Renovation</h3>
+                    <p class="text-gray-600">Modern, functional kitchen designs tailored to your needs and style.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-secondary mb-12">Our Work</h2>
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="portfolio-item relative overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Kitchen Renovation" class="w-full h-64 object-cover transition duration-300 hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                        <p class="text-white text-lg font-medium">Modern Kitchen</p>
+                    </div>
+                </div>
+                <div class="portfolio-item relative overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Bathroom Renovation" class="w-full h-64 object-cover transition duration-300 hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                        <p class="text-white text-lg font-medium">Luxury Bathroom</p>
+                    </div>
+                </div>
+                <div class="portfolio-item relative overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1600585152221-93f5f6f8d7b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Living Room" class="w-full h-64 object-cover transition duration-300 hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                        <p class="text-white text-lg font-medium">Living Space</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-secondary mb-12">What Our Clients Say</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-primary text-2xl mr-4">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"Agnum transformed our outdated kitchen into a modern masterpiece. Their attention to detail was impressive!"</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah J." class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-secondary">Sarah J.</h4>
+                            <p class="text-gray-500 text-sm">Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-primary text-2xl mr-4">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"The bathroom renovation exceeded our expectations. Professional team from start to finish."</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael T." class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-secondary">Michael T.</h4>
+                            <p class="text-gray-500 text-sm">Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-secondary text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-primary mr-4"></i>
+                            <p>Vainona, Pomona Industrial Park<br>Harare, Zimbabwe</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone-alt text-primary mr-4"></i>
+                            <div>
+                                <p>+263 77 420 0538</p>
+                                <p>+263 71 423 3649</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-primary mr-4"></i>
+                            <p>aghomes@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-white text-secondary flex items-center justify-center hover:bg-primary hover:text-white transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-white text-secondary flex items-center justify-center hover:bg-primary hover:text-white transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-white text-secondary flex items-center justify-center hover:bg-primary hover:text-white transition duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-1">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="phone" class="block mb-1">Phone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-1">Project Details</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary hover:bg-orange-700 text-white font-bold py-2 px-6 rounded-md transition duration-300">
+                            Submit Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-primary transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-primary transition duration-300">Terms of Service</a>
+                <a href="#" class="hover:text-primary transition duration-300">FAQ</a>
+            </div>
+            <p>&copy; 2023 Agnum Homes Pvt(Ltd). Established June 2005. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
